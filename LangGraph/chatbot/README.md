@@ -424,8 +424,8 @@ rm chat_history.db
 ## ✦ About the Author
 
 Built by **Tejendra Pal Singh**  
-B.Tech CSE · JECRC University, Jaipur (Batch 2022–26)  
-AI Intern @ **Global AI Technologies** (Jan–Jun 2026)
+B.Tech CSE  
+AI Engineer
 
 ---
 
