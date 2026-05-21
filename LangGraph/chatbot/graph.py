@@ -45,18 +45,26 @@ graph = build_graph()
 
 # ── Public helper ────────────────────────────────────────────────────────────
 
-def get_ai_response(history: list[dict]) -> str:
+def stream_ai_response(history: list[dict]):
     """
-    history: list of {"role": "user"|"assistant", "content": "..."}
-    Returns the AI reply string.
+    Streams AI response chunk by chunk.
     """
+
     messages = []
+
     for msg in history:
         if msg["role"] == "user":
             messages.append(HumanMessage(content=msg["content"]))
         else:
             messages.append(AIMessage(content=msg["content"]))
 
-    result = graph.invoke({"messages": messages})
-    last = result["messages"][-1]
-    return last.content
+    llm = get_llm()
+
+    system = SystemMessage(content=(
+        "You are a helpful, friendly, and concise AI assistant. "
+        "Answer clearly and accurately."
+    ))
+
+    # Stream response
+    for chunk in llm.stream([system] + messages):
+        yield chunk.content
