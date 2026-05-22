@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/39ab3821-abe4-40bf-bc76-aed9587d7bce
  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═════╝  ╚═════╝    ╚═╝
 ```
 
-### *Graph-Orchestrated Conversational AI · Persistent Memory · Local LLM · Beautiful UI*
+### *Graph-Orchestrated Conversational AI · Persistent Memory · Local LLM · Beautiful UI/UX*
 
 <br/>
 
