@@ -278,6 +278,94 @@ The application also allows users to ask questions related to their uploaded res
               Resume Score & Insights
                        ↓
               Improvement Suggestions
+
+```
+
+---
+
+### 08. 🥗 AI Nutrition Assistant — Food Calorie & Nutrition Analyzer
+
+<img width="833" height="926" alt="9" src="https://github.com/user-attachments/assets/e15df37b-b3ce-471b-b909-75b79ff5ad1a" />
+
+<img width="793" height="931" alt="10" src="https://github.com/user-attachments/assets/245552d5-ff83-4351-9d76-67f8c3551a12" />
+
+
+
+An AI-powered **Food Calorie and Nutrition Analyzer** built using **Google Gemini's multimodal vision capabilities**.
+
+The application allows users to upload an image of their meal or food. Gemini analyzes the image, identifies the visible food items, estimates portion sizes, and provides approximate nutritional information such as **calories, protein, carbohydrates, fat, and fiber**.
+
+Users can also interact with the application through a chatbot and ask follow-up questions about the uploaded food image.
+
+> ⚠️ **Note:** Nutritional values generated from an image are estimates. Actual calories and nutrition can vary depending on portion size, ingredients, cooking methods, and preparation.
+
+#### ✨ Key Features
+
+- 📷 Upload food images
+- 🤖 AI-powered food recognition
+- 🔍 Identify multiple food items from an image
+- ⚖️ Estimate food portion sizes
+- 🔥 Estimate calories for individual food items
+- 🥩 Estimate protein
+- 🍚 Estimate carbohydrates
+- 🥑 Estimate fat
+- 🌾 Estimate fiber
+- 📊 Calculate approximate total nutrition
+- 🩺 Generate general nutrition observations
+- 💬 Ask follow-up questions about the food
+- 🧠 Multimodal Gemini Vision analysis
+- 🖥️ Interactive Streamlit interface
+- 💾 Chat history during the session
+
+#### 🛠️ Technologies Used
+
+- Python
+- Google Gemini API
+- Google GenAI SDK
+- Gemini Multimodal / Vision
+- Streamlit
+- Python-dotenv
+- Pillow
+
+#### 🧠 Concepts Covered
+
+- Multimodal Generative AI
+- Computer Vision with LLMs
+- Image Understanding
+- Food Recognition
+- Prompt Engineering
+- Nutritional Estimation
+- Vision-based Question Answering
+- Conversational AI
+- Session State Management
+- Generative AI Application Development
+
+#### 🔄 Application Workflow
+
+```text
+                Food Image
+                    ↓
+             Gemini Vision
+                    ↓
+            Image Understanding
+                    ↓
+          Food Item Identification
+                    ↓
+          Portion Size Estimation
+                    ↓
+       ┌────────────┼────────────┐
+       ↓            ↓            ↓
+   Calories      Nutrition     Food Items
+       ↓            ↓            ↓
+       └────────────┼────────────┘
+                    ↓
+          Nutrition Analysis
+                    ↓
+           AI-generated Insights
+                    ↓
+             User Questions
+                    ↓
+             Gemini Response
 ```
 
 
