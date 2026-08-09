@@ -368,6 +368,80 @@ Users can also interact with the application through a chatbot and ask follow-up
              Gemini Response
 ```
 
+# 🎥 YouTube Video Q&A — Gemini AI
+<img width="1918" height="966" alt="11" src="https://github.com/user-attachments/assets/bff9acfe-7646-407e-8d26-9dd3a3742c4f" />
+
+
+An AI-powered YouTube Video Question Answering application built with **Python, Streamlit, Google Gemini, and YouTube Transcript API**.
+
+This project allows users to enter a YouTube video URL, automatically extract the available transcript, and interact with the video through a conversational AI chatbot.
+
+The application supports **English, Hindi, and other available transcript languages**, allowing users to ask questions about the video and receive context-based answers from Gemini.
+
+---
+
+## 🚀 Features
+
+- 🔗 Enter any supported YouTube video URL
+- 📝 Automatically extract the video's transcript
+- 🌐 Supports multilingual transcripts
+- 🇮🇳 Supports Hindi auto-generated transcripts
+- 🤖 Google Gemini-powered question answering
+- 💬 Interactive chatbot interface
+- 🧠 Answers questions using the video transcript
+- 📚 View the complete extracted transcript
+- 🎬 Watch the YouTube video directly inside the application
+- 💾 Chat history maintained during the session
+- ⚡ Simple and interactive Streamlit UI
+- 🚫 Reduces hallucination by instructing Gemini to answer only from the transcript
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| 🐍 Python | Core programming language |
+| 🎨 Streamlit | Web application and UI |
+| 🤖 Google Gemini | AI-powered question answering |
+| 📜 YouTube Transcript API | Transcript extraction |
+| 🔐 Python Dotenv | Environment variable management |
+| ▶️ YouTube | Video source |
+
+---
+
+## 🏗️ Application Workflow
+
+```text
+        YouTube Video URL
+                │
+                ▼
+        Extract Video ID
+                │
+                ▼
+      Fetch Available Transcript
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+     English           Hindi
+        │                │
+        └───────┬────────┘
+                ▼
+        Extract Transcript
+                │
+                ▼
+        Send Context to Gemini
+                │
+                ▼
+        User Asks Question
+                │
+                ▼
+        Gemini Analyzes Transcript
+                │
+                ▼
+        Context-Based Answer
+```
+
 
 
 
