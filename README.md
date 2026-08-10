@@ -444,6 +444,65 @@ The application supports **English, Hindi, and other available transcript langua
 
 ---
 
+# 📰 News Reporter AI Agent using CrewAI
+
+An AI-powered **multi-agent news research and content generation system** built using **CrewAI, Google Gemini, and Serper**.
+
+The project uses multiple specialized AI agents that collaborate to research a given topic from the internet and automatically generate a well-structured technology article in Markdown format.
+
+---
+
+## 🚀 Project Overview
+
+The **News Reporter AI Agent** demonstrates how multiple AI agents can work together to complete a real-world task.
+
+Instead of asking a single LLM to perform everything, the project divides the workflow into specialized agents:
+
+- 🔎 **Research Agent** → Searches the internet and gathers relevant information.
+- ✍️ **Writer Agent** → Uses the research to create an engaging article.
+- 🌐 **Serper Tool** → Provides real-time web search capabilities.
+- 🧠 **Google Gemini** → Powers the AI agents.
+- 🤝 **CrewAI** → Coordinates the agents and manages the workflow.
+
+The agents work sequentially to produce the final article.
+
+---
+
+## 🏗️ Architecture
+
+```text
+                    User
+                      │
+                      │
+                      ▼
+              ┌───────────────┐
+              │   CrewAI      │
+              │     Crew      │
+              └───────┬───────┘
+                      │
+              Sequential Process
+                      │
+             ┌────────┴────────┐
+             │                 │
+             ▼                 ▼
+      🔎 Research Agent   ✍️ Writer Agent
+             │                 │
+             │                 │
+             ▼                 │
+       Serper Web Search       │
+             │                 │
+             ▼                 │
+       Research Report ────────┘
+                               │
+                               ▼
+                     📝 Final Article
+                               │
+                               ▼
+                    new-blog-post.md
+```
+
+
+
 # 🚀 What's Next?
 
 This repository represents my hands-on journey in **Generative AI, LLMs, RAG, AI Agents, and AI-powered application development**.
@@ -510,5 +569,6 @@ Multi-Agent Systems
    ▼
 Production-Ready AI Applications 🚀
 ```
+
 
 
